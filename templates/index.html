@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1st Machine Learning Model Deployment</title>
+
+<style>
+body{
+    background-color:#eee;
+    
+}
+form{
+    background-color:#4facfe;
+    text-align:center;
+    border:5px solid black;
+    border-radius:5px;
+    height:100vh;
+    transform:rotate3d;
+}
+
+form input{
+    border:none;
+    border-radius:10px;
+}
+
+form button {
+     border:none;
+     color: transparent;
+     width:10rem;
+     border-radius:10px;
+     background-color:tomato;
+     color:white;
+}
+</style>
+</head>
+<body>
+
+<form method="post" >
+<div class="form-element">
+<div>    {{form.as_p}} 
+ {% csrf_token %}</div>
+ <div><button><span><i class="fas fa-chevron-right"></i></span>Submit</button></div>
+</div>
+</form>
+
+</body>
+</html>
